@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TODO_4_5</string>
+    <string name="name">Send</string>
+    <string name="second">Second Activity</string>
+    <string name="hint">Enter your text</string>
+    <string name="message">Message received</string>
+</resources>
