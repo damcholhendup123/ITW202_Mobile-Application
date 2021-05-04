@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-2dp"
+        android:fontFamily="cursive"
+        android:text=" Desserts"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/donut"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:onClick="Donut"
+        android:src="@drawable/donut" />
+
+    <TextView
+        android:id="@+id/txtDonut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@+id/donut"
+
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/donut"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/sandwich"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/donut"
+        android:layout_marginTop="22dp"
+
+        android:onClick="Sandwich"
+        android:src="@drawable/sandwich" />
+
+    <TextView
+        android:id="@+id/textsandwich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donut"
+        android:layout_marginTop="40dp"
+        android:layout_toEndOf="@+id/sandwich"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/sandwich"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/froyo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/sandwich"
+        android:layout_marginTop="22dp"
+        android:onClick="Froyo"
+        android:src="@drawable/froyo" />
+
+    <TextView
+        android:id="@+id/textfroyo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sandwich"
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@+id/froyo"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="@string/froyo"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textfroyo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="90dp"
+        android:onClick="fab"
+        android:src="@drawable/ic_baseline_shopping_cart_24"
+        android:contentDescription="TODO" />
+
+
+</RelativeLayout>
